@@ -1,0 +1,7 @@
+wget --quiet \
+ --method POST \
+ --header 'cache-control: no-cache' \
+ --header 'content-type: application/x-www-form-urlencoded' \
+ --body-data 'user_API_token=YOUR-EV-API-TOKEN&role_address=true&bad_address=true&free_email=true&disposable=true&typo_suggest=true&source_file=https%3A%2F%2Fwww.domain.com%2Fmy-mailing-list.csv' \
+ --output-document \
+ - https://api.evasrv.com/batch_process/
